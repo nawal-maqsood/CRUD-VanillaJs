@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Notes App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 p-6">
+    <div class="mx-auto">
+        <h1 class="text-2xl font-bold text-center mb-4">Notes App</h1>
+        <input type="text" id="noteInput" placeholder="Add a new note" class="w-full p-2 mb-2 border rounded-md">
+        <select id="categorySelect" class="w-full p-2 mb-2 border rounded-md">
+            <option value="General">General</option>
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
+            <option value="Urgent">Urgent</option>
+        </select>
+        <button id="addNoteButton" onclick="add()" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Add Note</button>
+        <ul id="notesList" class="mt-4"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
